@@ -9,6 +9,7 @@ func main() {
 	window := medianSlidingWindow([]int{1, 4, 2, 3}, 4)
 	fmt.Println(window)
 }
+
 //
 func medianSlidingWindow(nums []int, k int) []float64 {
 	l := len(nums)
