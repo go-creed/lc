@@ -9,7 +9,6 @@ func main() {
 
 func twoSum(nums []int, target int) []int {
 	mm := make(map[int]int)
-
 	for i, v := range nums {
 		if x, ok := mm[target-v]; ok {
 			return []int{x, i}
@@ -17,6 +16,5 @@ func twoSum(nums []int, target int) []int {
 			mm[v] = i
 		}
 	}
-
 	return nil
 }
